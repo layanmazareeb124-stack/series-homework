@@ -1,5 +1,7 @@
-export const getDramas = series => series.filter(show => show.genre = "Drama");
-
+//export const getDramas = series => series.filter(show => show.genre = "Drama");
+export const getDramas = series =>
+  series.filter(show => show.genre === "Drama");
+ 
 export const getEpisodeById = (season, idText) =>
   season.episodes.find(episode => episode.id === idText);
 
